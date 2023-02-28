@@ -1,9 +1,4 @@
-# Get name until an exit code is entered
-
-name = ""
-while name.lower() != "xxx":
-    name = input("Who are you? ")
-    print(name)
-
-print()
-print("We are done!")
+import random
+for item in range(0,20):
+    number = random.randint(1, 100)
+    print(number)
