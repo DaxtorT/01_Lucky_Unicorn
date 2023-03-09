@@ -30,7 +30,10 @@ def instructions():
     instructions_statement = statement_deco("-", 3, "*", "How to Play", 3)
     print(instructions_statement)
     print()
-    print("The rules of the game go here")
+    print("Playing Lucky Unicorn is very easy.")
+    print("All you need to do is pick an amount of money to play with,")
+    print("from 1 to 10 dollars not including cents.")
+    print("Then you press <enter> to start the game and when playing the next round.")
     print()
     return ""
 
@@ -143,9 +146,10 @@ while play_again == "":
     if balance < 1:
         play_again = "xxx"
         print("Sorry you have run out of money :(")
+        print()
 
     else:
-        play_again = input("Press enter to play again or 'xxx' to quit")
+        play_again = input("Press <Enter> to Play Again or 'xxx' to Quit")
 
 
 final_statement = statement_deco("-", 3, "*", "Final Results", 3)
