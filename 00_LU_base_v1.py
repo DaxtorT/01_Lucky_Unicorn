@@ -29,7 +29,6 @@ def yes_no(question):
 def instructions():
     instructions_statement = statement_deco("-", 3, "*", "How to Play", 3)
     print(instructions_statement)
-    print()
     print("Playing Lucky Unicorn is very easy.")
     print("All you need to do is pick an amount of money to play with,")
     print("from 1 to 10 dollars not including cents.")
@@ -89,7 +88,9 @@ else:
     print()
 
 # Ask user how much they want to play with
-how_much = num_checker("How much do you want to play with? ", 0, 100)
+playing_statement = statement_deco("-", 3, "*", "Let's Get Started", 3)
+print(playing_statement)
+how_much = num_checker("How much do you want to play with? ", 0, 10)
 balance = how_much
 print()
 
